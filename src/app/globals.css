@@ -2,26 +2,366 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+.fonts {
+  font-style: italic;
+}
+.color {
+  color: #21275b;
+}
+.imageStyle {
+  /* background-position: 50%; */
+  object-fit: none;
+    object-position: center;
+}
+ 
+
+.line-container-layer {
+  text-align: center;
+  position: relative;
+  padding: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.line-container-layer::before,
+.line-container-layer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  background-color: rgba(88,88,85,.175);
+}
+
+.line-container::before {
+  right: 45%;
+  margin-right: 15px;
+}
+
+.line-container::after {
+  left: 45%;
+  margin-left: 15px;
+}
+
+.line-container {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.line-container::before,
+.line-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: rgba(88,88,85,.175);
+}
+
+.line-container::before {
+  right: 40%;
+  margin-right: 15px;
+}
+
+.line-container::after {
+  left: 40%;
+  margin-left: 15px;
+}
+
+
+.text-layer {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding: 0 23px;
+  font-size: 23px;
+  font-weight: 500;
+  color: #21275b;
+}
+
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.counters{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+@media  (max-width: 769px) {
+  .fonts {
+    font-size: 15px
+  }
+  .imageStyle {
+    object-fit: fill;
+  }
+  .py-5 .text-center .text-white .media {
+    padding-top: 5px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.counter-m {
+  font-size: 45px;
+  font-weight: bold;
+}
+.counter-wrapper{
+
+  background: cover;
+  background-position: center center;
+  position: relative; 
+}
+
+.counter-wrapper:after{
+  content: '';
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+
+}
+.counter-inner{
+  position:relative;
+  z-index:2;
+}
+.count-icon{
+  font-size: 48px;
+}
+@media (max-width:768px) {
+  .media{
+    padding: 0;
+    color: aqua;
+  }
+}
+
+.Business-sec1 .first {
+  font-size: 80px;
+  padding-bottom: 10px;
+  color: #21275b;
+}
+.Business-sec1 .st {
+  font-size: 40px;
+  padding-top: 28px;
+  /* font-weight: 600; */
+  color: #21275b;
+
+}
+
+.Business-sec1 .business {
+  text-transform: uppercase;
+  padding-left: 8px;
+  font-size: 19px;
+  color: #21275b;
+  padding-top: 29px;
+}
+
+
+
+#card-background{
+  background-image: url("/public/mall.jpg");
+  background-size: cover;
+}
+
+
+/* DEVELOPER */
+
+.portfolio {
+  background-color: white;
+}
+.picEdit {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+.portfolio .portfolio-text {
+  position: relative;
+}
+.portfolio .portfolio-text h1 {
+  color: #0000002b;
+  opacity: 0.8;
+  font-size: 129px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.portfolio .portfolio-text h4.descrip {
+  position: absolute;
+  right: 43%;
+  font-size: 41px;
+  bottom: 36px;
+}
+
+.portfolio .portfolio-text h4.descrip span {
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  top: 95%;
+  /* background-color: #20c997; */
+  right: 40%;
+}
+.portfolio .nav-item .nav-link {
+  color: #979494;
+}
+
+.portfolio .portfolio-pic .box-pic {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.7s;
+}
+
+.portfolio .portfolio-pic .box-pic .content-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+  background-color:transparent;
+  z-index: 3;    
+  left: 0;
+  bottom: 0;
+  color: white;
+}
+.portfolio .portfolio-pic .box-pic .img-container{
+  transition: all 0.7s;
+  z-index: 2;
+}
+.portfolio .portfolio-pic .box-pic .img-container img {
+  transition: all 0.7s;
+}
+.portfolio .portfolio-pic .box-pic .img-container:hover {
+  transform: scale(1.2);  
+  transition: all 0.7s;
+}
+
+
+.portfolio .portfolio-pic .box-pic .overlay-pic {
+  position: absolute;
+  background-color: #00000061;
+  width: 100%;
+  height: 100%;
+  bottom: 20%;
+  top: 0;
+  transition: all 0.7s;
+}
+@media(max-width:768px) {
+.slick-slide {
+  width: 300px !important;
+  color: aqua;
+  font-size: 50px;
+}
+
+}
+
+
+/* slick slider */
+
+.slick-prev{
+
+  left: 0 !important;
+  z-index: 1000;
+  display: flex;
+}
+ .slick-prev::before{
+content: '';
+padding-left: 30px;
+}
+
+.slick-slide img {
+  border-radius: 20px !important;
+  height: 50% !important;
+}
+
+.slick-next{
+  right: 100px !important;
+  z-index: 1000;
+  display: flex;
+}
+
+.slick-next::before{
+ 
+  /* content: ">" !important;
+  background-color: rgb(124, 120, 120);
+  color: black;
+  padding-top: 10px;
+  font-size: 10px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50px; */
+  /* border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); */
+  }
+
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.sm-icons {
+  flex-direction: row;
+}
+.sm-icons .nav-link {
+  padding-right: 1em;
+}
+
+/* HomeShow */
+.child {
+  background-color: white;
+  position: absolute;
+  margin: auto;
+  top: 55%;
+  left: 13%;
+}
+
+.gallary  {
+  overflow: hidden;
+}
+.imageContainer {
+  overflow: hidden;
+}
+.gallary .overlay-gallary {
+  position: absolute;
+  bottom: -35%;
+  left: 15px;
+  width: 90%;
+  transition: all .8s;
+}
+.gallary image {
+  transform: scale(1.5)
+}
+
+.gallaryText {
+  color: #21275b;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px !important;
+}
+
+.gText {
+  color: #2e2e2e;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.layerText {
+  color: white;
+  font-size: 15px;
+}
+
+.gallary:hover .overlay-gallary {
+  bottom: 6%;
+}
+
+.dropdown {
+  font-size: 10px;
 }

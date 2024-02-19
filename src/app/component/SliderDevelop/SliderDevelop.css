@@ -1,0 +1,145 @@
+
+
+.portfolio {
+    background-color: white;
+  }
+
+.container {
+    max-width: none;
+    margin-right: 3%!important;
+    margin-left: 4%!important;
+    width: auto!important;
+    max-width: none!important; 
+  }
+  
+  .picEdit {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .portfolio .portfolio-text {
+    position: relative;
+  }
+
+  .portfolio .portfolio-text h1 {
+    color: #0000002b;
+    opacity: 0.8;
+    font-size: 129px;
+    font-weight: 700;
+    padding-top: 50px;
+  }
+
+  .portfolio .portfolio-text h4.descrip {
+    position: absolute;
+    right: 43%;
+    font-size: 41px;
+    bottom: 36px;
+  }
+  
+  .portfolio .portfolio-text h4.descrip span {
+    width: 30%;
+    height: 5px;
+    position: absolute;
+    top: 95%;
+    background-color: #20c997;
+    right: 40%;
+  }
+
+  .portfolio .nav-item .nav-link {
+    color: #979494;
+  }
+  
+  .portfolio .portfolio-pic .box-pic {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s;
+  }
+  
+  .portfolio .portfolio-pic .box-pic .content-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    background-color:transparent;
+    z-index: 3;    
+    left: 0;
+    bottom: 0;
+    color: white;
+  }
+  
+  .portfolio .portfolio-pic .box-pic .img-container{
+    transition: all 0.7s;
+    z-index: 2;
+  }
+  .portfolio .portfolio-pic .box-pic .img-container img {
+    transition: all 0.7s;
+  }
+  .portfolio .portfolio-pic .box-pic .img-container:hover {
+    transform: scale(1.2);  
+    transition: all 0.7s;
+  }
+  
+  
+  .portfolio .portfolio-pic .box-pic .overlay-pic {
+    position: absolute;
+    background-color: #00000061;
+    width: 100%;
+    height: 100%;
+    bottom: 20%;
+    top: 0;
+    transition: all 0.7s;
+  }
+  
+
+  .nextArrow,
+  .prevArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #fff; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 50%; 
+  }
+  
+  .nextArrow {
+    right: 10px; 
+  }
+  
+  .prevArrow {
+    left: 10px; /* Adjust the distance from the left */
+  }
+  
+    
+  .line-container-layer {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.line-container-layer::before,
+.line-container-layer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+ 
+  width: 38%;
+  height: 1px;
+  background-color: rgba(88,88,85,.175);
+}
+
+.line-container::before {
+  /* right: 40%; */
+  margin-right: 15px;
+}
+
+.line-container::after {
+  /* left: 40%; */
+  margin-left: 15px;
+}
+
+    

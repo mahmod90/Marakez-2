@@ -1,0 +1,124 @@
+
+.color {
+    color: #21275b;
+    font-weight:500;
+    font-size: 20px;
+}
+
+.fonts {
+    color: #484848;
+}
+
+.container {
+    margin-right: 2%!important;
+    margin-left: 2%!important;
+    width: auto!important;
+    max-width: none!important;
+
+}
+
+.colorText {
+    color: #484848;
+    font-size: larger;
+}
+.edit {
+    background-color: #21275b !important;
+    padding: 9px 25px !important;
+    margin-top: 1rem !important;
+    border: 1px solid #21275b !important;
+    color: white;
+    border-radius: 20px;
+    width: 30%;
+    font-size: 13px;
+}
+
+.card {
+    position: relative;
+    margin-right: 7px;
+}
+
+.card .imgContent {
+    position: relative;
+    top: 20px;
+    left: 20px;   
+    margin-right: 5px;
+ 
+}
+
+.card .imgContent img{
+    border-radius: 10px;
+}
+
+.layer {
+    position: absolute;
+    /* padding-top: 90px; */
+    top: 0;
+    background-color: #00000061;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 12px;
+  
+}
+.campuse {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+.districtp {
+    font-size: 14px;
+    color: white;
+
+}
+ 
+.row {
+    margin-bottom: 60px;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (e.g., phones) */
+    .latest {
+      color: aqua;
+      font-size: 30px;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    /* Tablet styles */
+    .row{
+        padding: 0;
+        margin-top: 2px;
+    }
+    .meida {
+        margin-top: 10px;
+    }
+    .mt-4 .py-5 .remove  {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+  
+    .col-md-5 {
+     background-color: aqua;
+     font-size: 40px;
+     margin-right: 0; /* Remove any right margin for better spacing */
+     display: flex; /* Use flexbox */
+     flex-direction: column;
+    }
+  
+    .item {
+      color: red;
+      font-size: 50px;
+      margin-left: 10px;
+    }
+  
+    /* Add more styles for other elements as needed */
+  
+    .edit {
+        color: rgb(0, 255, 42);
+        width: 70%;
+    }
+  
+  }

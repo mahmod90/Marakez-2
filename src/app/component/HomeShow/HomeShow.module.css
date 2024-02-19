@@ -1,0 +1,55 @@
+.child {
+    width: 70%;
+}
+
+.editH {
+    color: #21275b;
+    font-size: 17px;
+    line-height: 19px;
+    border-style: none;
+    padding: 5px 0;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* .child .liner::after, 
+.child .liner::after{
+  content: "";
+  position: absolute;
+  width: 3px;
+  left: 20%;
+  height: 20%;
+  background-color: #FF305B;
+  bottom: 30%;
+  transition: all .5s;
+
+  
+} */
+
+.col-md {
+    position: relative;
+  }
+  
+  .liner {
+    content: '';
+    position: absolute;
+    top: 35px;
+    bottom: 35px;
+    width: 1px;
+    background-color: #ccc;  
+  }
+  
+ 
+ 
+  /* Additional styling for the content */
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+ 
+  

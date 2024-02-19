@@ -1,0 +1,49 @@
+.container {
+    margin-right: 2%!important;
+    margin-left: 2%!important;
+    width: auto!important;
+    max-width: none!important;
+
+}
+
+
+  
+/* YourComponent.module.css */
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: #fff; /* Customize the background color */
+  padding: 10px; /* Customize the padding */
+  border: 1px solid #ccc; /* Customize the border */
+  border-radius: 50%; /* Make it circular */
+}
+
+.nextArrow {
+  right: 10px; /* Adjust the distance from the right */
+}
+
+.prevArrow {
+  left: 10px; /* Adjust the distance from the left */
+}
+
+/* @media (max-width: 420px) {
+  .query {
+    background-color: aqua;
+    display: contents;
+  }
+} */
+
+
+@media  (max-width: 767px) {
+  .Business {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* background-color: red; */
+  }
+}
+  
